@@ -65,15 +65,26 @@
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                     <h3>What is Object oriented programming?</h3>
                     <p>Object-oriented programming is a programming paradigm based on the concept of "objects", which can contain data and code: data in the form of fields, and code, in the form of procedures. A feature of objects is that an object's own procedures can access and often modify the data fields of itself.</p>
-                    <h3>Implementing Pylint</h3>
+                    <h3>Polymorphism</h3>
+                    <p>In programming languages and type theory, polymorphism is the provision of a single interface to entities of different types or the use of a single symbol to represent multiple different types.</p>
+                    <h3>Abstraction</h3>
+                    <p>An abstract class can be considered as a blueprint for other classes. It allows you to create a set of methods that must be created within any child classes built from the abstract class. A class which contains one or more abstract methods is called an abstract class. An abstract method is a method that has a declaration but does not have an implementation. While we are designing large functional units we use an abstract class. When we want to provide a common interface for different implementations of a component, we use an abstract class. </p>
+                    <h3>Inheritance</h3>
+                    <p>Inheritance is the capability of one class to derive or inherit the properties from another class. The benefits of inheritance are: 
+                        It represents real-world relationships well.
+                        It provides reusability of a code. We don’t have to write the same code again and again. Also, it allows us to add more features to a class without modifying it.
+                        It is transitive in nature, which means that if class B inherits from another class A, then all the subclasses of B would automatically inherit from class A.</p>
+                    <h3>Encapsulation</h3>
+                    <p>Encapsulation is the packing of data and functions that work on that data within a single object. By doing so, you can hide the internal state of the object from the outside. This is known as information hiding.</p>
+                    <h3>Implementing OOPs</h3>
                     <div class="container px-4 px-lg-5">
                         <!-- Featured Project Row-->
                         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/pylint1.png" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/OOP1.png" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Step 1</h4>
-                            <p class="text-black-50 mb-0">Pylint can be installed to your project by using the pip install pylint command in the terminal. Since I already have it installed it says requirements already satiafied.</p>
+                            <h4>Polymorphism</h4>
+                            <p class="text-black-50 mb-0">The word polymorphism means having many forms. In programming, polymorphism means the same function name (but different signatures) being used for different types. Here we see a basic example of polymorphism</p>
                         </div>
                     </div>
                     </div>
@@ -81,11 +92,11 @@
                     <div class="container px-4 px-lg-5">
                         <!-- Featured Project Row-->
                         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/pylint2.png" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/OOPs2.png" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Step 2</h4>
-                            <p class="text-black-50 mb-0">Pycharm also fetures a pylint plugin that can be easily installed. To do this go to prefrences then click plugins. Search pylint and install it. Restart pycharm after installing.</p>
+                            <h4>Polymorphism with classes</h4>
+                            <p class="text-black-50 mb-0">The code shows how Python can use two different class types, in the same way. We create a for loop that iterates through a tuple of objects. Then call the methods without being concerned about which class type each object is. We assume that these methods actually exist in each class. </p>
                         </div>
                     </div>
                     </div>
@@ -93,11 +104,11 @@
                     <div class="container px-4 px-lg-5">
                         <!-- Featured Project Row-->
                         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/pylint3.png" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/OOPs3.png" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Step 3</h4>
-                            <p class="text-black-50 mb-0">To implement pylint into your python project set up the Exec path for the plugin so that Pycharm can execute Pylint every time user needs to inspect the code. For that, go to Settings/Preferences, click Other Settings, and then Pylint. Enter the PATH environment variable there and you are good to go.</p>
+                            <h4>Abstraction</h4>
+                            <p class="text-black-50 mb-0">By default, Python does not provide abstract classes. Python comes with a module that provides the base for defining Abstract Base classes(ABC) and that module name is ABC. </p>
                         </div>
                     </div>
                     </div>
@@ -105,11 +116,11 @@
                     <div class="container px-4 px-lg-5">
                         <!-- Featured Project Row-->
                         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/pylint4.png" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/OOPs4.png" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Step 3</h4>
-                            <p class="text-black-50 mb-0">Lets see how it works. Download the example code from the link provided above. When running the code we see pylint shows 23 conventions in the file that need to be fixed. For this  code, you can see there are many display convention issues. At the lower left, you might see 4 symbols (red, yellow, blue, red ), these symbols tell the user about “Errors”, “Warnings”, “Display Conventions”, and “Refactoring” issues in the code.</p>
+                            <h4>Inheritance</h4>
+                            <p class="text-black-50 mb-0">This code shows example of inheritance in python.</p>
                         </div>
                     </div>
                     </div>
@@ -117,143 +128,30 @@
                     <div class="container px-4 px-lg-5">
                         <!-- Featured Project Row-->
                         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/OOPs5.png" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
-                            <h4>Step 4</h4>
-                            <p class="text-black-50 mb-0">Pylint describes these errors so you know exactly whats wrong. Try improving the code and fixing some of the pylint errors to see if some of the conventions go away.</p>
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Encapsulation</h4>
+                            <p class="text-black-50 mb-0">This code shows example of Encapsulation in python.</p>
                         </div>
                     </div>
-                    </div>
-                    </div>
+                    <br>
                     <div class="container px-4 px-lg-5">
                         <!-- Featured Project Row-->
                         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-4 col-lg-5">
-                            <h4>Step 5</h4>
-                            <p class="text-black-50 mb-0">The pylint.rc file can also be added to the project to change how pylint performs and errors can be disabled by using "#" on top of the errored code and disabling the error.</p>
+                            <h4>Use of Object Oriented Programming in the Calculator project.</h4>
+                            <p>In the calcultor project we were able to implement object oriented programming that made our project more readable to other users and helped organize the project. It also made it easy to use different objects in different places. The link to the code for the calculator is provided below. Check it out to see how OOP was implemented to make the project more understanding to users rather then having one python file will all the code which would make looking thruough it and reading it harder and less efficient.</p>
                         </div>
+                        <p>Link to the above code is provided below</p>
+                        <br>
+                        <a href="https://github.com/Samerthpatel/testcode1/tree/OOPs">Object Oriented Programming example code</a>
+                        <br>
+                        <a href="https://github.com/Samerthpatel/calcexample">Calculator project code</a>
                     </div>
                     </div>
                     </div>
-                    <h1>Terms and definitions</h1>
-    <table>
-        <tr>
-            <td>Factory</a></td>
-            <td>Attach local standard input, output, and error streams to a running container</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Instantiation</a></td>
-            <td>Build an image from a Dockerfile</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Object</a></td>
-            <td>Manage builds</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Class</a></td>
-            <td>Manage checkpoints</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Namespace</a></td>
-            <td>Create a new image from a container’s changes</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Constructor</a></td>
-            <td>Manage Docker configs</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Fixture</a></td>
-            <td>Manage containers</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Type hint</a></td>
-            <td>Manage contexts</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Type cast</a></td>
-            <td>Copy files/folders between a container and the local filesystem</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Unit test</a></td>
-            <td>Create a new container</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Static</a></td>
-            <td>Inspect changes to files or directories on a container’s filesystem</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Class method</a></td>
-            <td>Get real time events from the server</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Facade</a></td>
-            <td>Run a command in a running container</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Method</a></td>
-            <td>Export a container’s filesystem as a tar archive</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Property</a></td>
-            <td>Show the history of an image</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Encapsulation</a></td>
-            <td>Manage images</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Inheritance</a></td>
-            <td>List images</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Polymorphism</a></td>
-            <td>Import the contents from a tarball to create a filesystem image</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Abstraction</a></td>
-            <td>Display system-wide information</td>
-          </tr>
-        
-          
-      </table>
-                </div>
-                
-            </div>
+                    </div>
+
         </section>
         
         <!-- Bootstrap core JS-->
