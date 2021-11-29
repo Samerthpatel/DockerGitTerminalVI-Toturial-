@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>IS218 Tutorial</title>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="../index.html">IS218 Tutorial</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="./git.html">GIT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./terminal.html">Terminal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./docker.html">Docker</a></li>
+                        <li class="nav-item"><a class="nav-link" href="vi.html">Vi</a></li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Project 2
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="article1.html">Pylint Article</a></li>
+                            <li><a class="dropdown-item" href="article2.html">AAA Testing Article</a></li>
+                            <li><a class="dropdown-item" href="article3.html">OOPs Article</a></li>
+                            <li><a class="dropdown-item" href="article4.html">Solid Object Oriented Design Article</a></li>
+                          </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">Pylint Article</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Toturial to implement pylint into your project</h2>
+                        <a class="btn btn-primary" href="#projects">Implementing pylint</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+       
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <h3>What is pylint?</h3>
+                    <p>Pylint is a source-code, bug and quality checker for the Python programming language. It is named following a common convention in Python of a "py" prefix, and a nod to the C programming lint program. It follows the style recommended by PEP 8, the Python style guide.</p>
+                    <h3>Implementing Pylint</h3>
+                    <div class="container px-4 px-lg-5">
+                        <!-- Featured Project Row-->
+                        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/pylint1.png" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Step 1</h4>
+                            <p class="text-black-50 mb-0">Pylint can be installed to your project by using the pip install pylint command in the terminal. Since I already have it installed it says requirements already satiafied.</p>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="container px-4 px-lg-5">
+                        <!-- Featured Project Row-->
+                        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/pylint2.png" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Step 2</h4>
+                            <p class="text-black-50 mb-0">Pycharm also fetures a pylint plugin that can be easily installed. To do this go to prefrences then click plugins. Search pylint and install it. Restart pycharm after installing.</p>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="container px-4 px-lg-5">
+                        <!-- Featured Project Row-->
+                        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/pylint3.png" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Step 3</h4>
+                            <p class="text-black-50 mb-0">To implement pylint into your python project set up the Exec path for the plugin so that Pycharm can execute Pylint every time user needs to inspect the code. For that, go to Settings/Preferences, click Other Settings, and then Pylint. Enter the PATH environment variable there and you are good to go.</p>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="container px-4 px-lg-5">
+                        <!-- Featured Project Row-->
+                        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/pylint4.png" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Step 3</h4>
+                            <p class="text-black-50 mb-0">Lets see how it works. Download the example code from the link provided above. When running the code we see pylint shows 23 conventions in the file that need to be fixed. For this  code, you can see there are many display convention issues. At the lower left, you might see 4 symbols (red, yellow, blue, red ), these symbols tell the user about “Errors”, “Warnings”, “Display Conventions”, and “Refactoring” issues in the code.</p>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="container px-4 px-lg-5">
+                        <!-- Featured Project Row-->
+                        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-4 col-lg-5">
+                            <h4>Step 4</h4>
+                            <p class="text-black-50 mb-0">Pylint describes these errors so you know exactly whats wrong. Try improving the code and fixing some of the pylint errors to see if some of the conventions go away.</p>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="container px-4 px-lg-5">
+                        <!-- Featured Project Row-->
+                        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-4 col-lg-5">
+                            <h4>Step 5</h4>
+                            <p class="text-black-50 mb-0">The pylint.rc file can also be added to the project to change how pylint performs and errors can be disabled by using "#" on top of the errored code and disabling the error.</p>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    <h1>Terms and definitions</h1>
+    <table>
+        <tr>
+            <td>Factory</a></td>
+            <td>Attach local standard input, output, and error streams to a running container</td>
+          </tr>
+        
+          
+          <tr>
+            <td>Instantiation</a></td>
+            <td>Build an image from a Dockerfile</td>
+          </tr>
+        
+          
+          <tr>
+            <td>Object</a></td>
+            <td>Manage builds</td>
+          </tr>
+        
+          
+          <tr>
+            <td>Class</a></td>
+            <td>Manage checkpoints</td>
+          </tr>
+        
+          
+          <tr>
+            <td>Namespace</a></td>
+            <td>Create a new image from a container’s changes</td>
+          </tr>
+        
+          
+          <tr>
+            <td>Constructor</a></td>
+            <td>Manage Docker configs</td>
+          </tr>
+        
+          
+          <tr>
+            <td>Fixture</a></td>
+            <td>Manage containers</td>
+          </tr>
+        
+          
+          <tr>
+            <td>Type hint</a></td>
+            <td>Manage contexts</td>
+          </tr>
+        
+          
+          <tr>
+            <td>Type cast</a></td>
+            <td>Copy files/folders between a container and the local filesystem</td>
+          </tr>
+        
+          
+          <tr>
+            <td>Unit test</a></td>
+            <td>Create a new container</td>
+          </tr>
+        
+          
+          <tr>
+            <td>Static</a></td>
+            <td>Inspect changes to files or directories on a container’s filesystem</td>
+          </tr>
+        
+          
+          <tr>
+            <td>Class method</a></td>
+            <td>Get real time events from the server</td>
+          </tr>
+        
+          
+          <tr>
+            <td>Facade</a></td>
+            <td>Run a command in a running container</td>
+          </tr>
+        
+          
+          <tr>
+            <td>Method</a></td>
+            <td>Export a container’s filesystem as a tar archive</td>
+          </tr>
+        
+          
+          <tr>
+            <td>Property</a></td>
+            <td>Show the history of an image</td>
+          </tr>
+        
+          
+          <tr>
+            <td>Encapsulation</a></td>
+            <td>Manage images</td>
+          </tr>
+        
+          
+          <tr>
+            <td>Inheritance</a></td>
+            <td>List images</td>
+          </tr>
+        
+          
+          <tr>
+            <td>Polymorphism</a></td>
+            <td>Import the contents from a tarball to create a filesystem image</td>
+          </tr>
+        
+          
+          <tr>
+            <td>Abstraction</a></td>
+            <td>Display system-wide information</td>
+          </tr>
+        
+          
+      </table>
+                </div>
+                
+            </div>
+        </section>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+       
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
