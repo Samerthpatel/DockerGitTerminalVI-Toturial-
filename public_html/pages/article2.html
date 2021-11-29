@@ -66,14 +66,35 @@
                     <h3>What is AAA testing?</h3>
                     <p>The AAA (Arrange-Act-Assert) pattern has become almost a standard across the industry. It suggests that you should divide your test method into three sections: arrange, act and assert. Each one of them only responsible for the part in which they are named after.</p>
                     <h3>Implementing AAA testing</h3>
+                    <br>
+                    <p>Arrange-Act-Assert is a great way to structure test cases. It prescribes an order of operations:</p>
+                    <br>
+                    <p>Arrange inputs and targets. Arrange steps should set up the test case. Does the test require any objects or special settings? Does it need to prep a database? Does it need to log into a web app? Handle all of these operations at the start of the test.</p>
+                    <br>
+                    <p>Act on the target behavior. Act steps should cover the main thing to be tested. This could be calling a function or method, calling a REST API, or interacting with a web page. Keep actions focused on the target behavior.</p>
+                    <br>
+                    <p>Assert expected outcomes. Act steps should elicit some sort of response. Assert steps verify the goodness or badness of that response. Sometimes, assertions are as simple as checking numeric or string values. Other times, they may require checking multiple facets of a system. Assertions will ultimately determine if the test passes or fails.</p>
+                    <br>
+                    <h3>Structure of AAA testing</h3>
+                    <br><br>
+                    <ul class="simple">
+                        <li>First there is the test definition, docstring and&nbsp;Arrangement.</li>
+                        <li>Empty&nbsp;line.</li>
+                        <li>In the middle, there is a single line of code - this is the most important
+                        part: The&nbsp;Act.</li>
+                        <li>Empty&nbsp;line.</li>
+                        <li>Finally there are the Assertions. You can see that the Assert block code
+                        lines all start with the orange / brown colour - that is because the Python
+                        keyword <tt class="docutils literal">assert</tt> is marked with this colour in Vim with my current&nbsp;configuration.</li>
+                        </ul>
                     <div class="container px-4 px-lg-5">
                         <!-- Featured Project Row-->
                         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/pylint1.png" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/AAA1.png" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Step 1</h4>
-                            <p class="text-black-50 mb-0">Pylint can be installed to your project by using the pip install pylint command in the terminal. Since I already have it installed it says requirements already satiafied.</p>
+                            <h4>Structure</h4>
+                            <p class="text-black-50 mb-0">Following what we learned about AAA testing, this is the Structure used to code. </p>
                         </div>
                     </div>
                     </div>
@@ -81,11 +102,11 @@
                     <div class="container px-4 px-lg-5">
                         <!-- Featured Project Row-->
                         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/pylint2.png" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/AAA2.png" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Step 2</h4>
-                            <p class="text-black-50 mb-0">Pycharm also fetures a pylint plugin that can be easily installed. To do this go to prefrences then click plugins. Search pylint and install it. Restart pycharm after installing.</p>
+                            <h4>Unit testing</h4>
+                            <p class="text-black-50 mb-0">This is an example of applying AAA testing to pythons absolute value function.</p>
                         </div>
                     </div>
                     </div>
@@ -93,11 +114,11 @@
                     <div class="container px-4 px-lg-5">
                         <!-- Featured Project Row-->
                         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/pylint3.png" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/AAA3.png" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Step 3</h4>
-                            <p class="text-black-50 mb-0">To implement pylint into your python project set up the Exec path for the plugin so that Pycharm can execute Pylint every time user needs to inspect the code. For that, go to Settings/Preferences, click Other Settings, and then Pylint. Enter the PATH environment variable there and you are good to go.</p>
+                            <h4>Calcualtor addition funtion</h4>
+                            <p class="text-black-50 mb-0">In this picture we see a function that lets you add two values together. It would be good to be able to test if the function works properly.</p>
                         </div>
                     </div>
                     </div>
@@ -105,11 +126,11 @@
                     <div class="container px-4 px-lg-5">
                         <!-- Featured Project Row-->
                         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/pylint4.png" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/AAA4.png" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Step 3</h4>
-                            <p class="text-black-50 mb-0">Lets see how it works. Download the example code from the link provided above. When running the code we see pylint shows 23 conventions in the file that need to be fixed. For this  code, you can see there are many display convention issues. At the lower left, you might see 4 symbols (red, yellow, blue, red ), these symbols tell the user about “Errors”, “Warnings”, “Display Conventions”, and “Refactoring” issues in the code.</p>
+                            <h4>Addition test</h4>
+                            <p class="text-black-50 mb-0">This picture shows how to make a test for the addition function by using the AAA method. The different parts are labeled to make it easier to see how its implemented.</p>
                         </div>
                     </div>
                     </div>
@@ -117,140 +138,16 @@
                     <div class="container px-4 px-lg-5">
                         <!-- Featured Project Row-->
                         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-4 col-lg-5">
-                            <h4>Step 4</h4>
-                            <p class="text-black-50 mb-0">Pylint describes these errors so you know exactly whats wrong. Try improving the code and fixing some of the pylint errors to see if some of the conventions go away.</p>
+                            <h4>Test code</h4>
+                            <p>Test code, in the same way as production code, is supposed to be clean and self-explanatory. Preempting what you are going to do just adds unnecessary clutter. You can still have a clear distinction of the three steps by using spaces and indentation. Which are ultimately the key features the compiler provides you to structure your code.</p>
                         </div>
+                        <p>Link to the above code is provided below</p>
+                        <br>
+                        <a href="https://github.com/Samerthpatel/testcode1/tree/AAAtesting">AAA testing example code</a>
                     </div>
                     </div>
                     </div>
-                    <div class="container px-4 px-lg-5">
-                        <!-- Featured Project Row-->
-                        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-4 col-lg-5">
-                            <h4>Step 5</h4>
-                            <p class="text-black-50 mb-0">The pylint.rc file can also be added to the project to change how pylint performs and errors can be disabled by using "#" on top of the errored code and disabling the error.</p>
-                        </div>
                     </div>
-                    </div>
-                    </div>
-                    <h1>Terms and definitions</h1>
-    <table>
-        <tr>
-            <td>Factory</a></td>
-            <td>Attach local standard input, output, and error streams to a running container</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Instantiation</a></td>
-            <td>Build an image from a Dockerfile</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Object</a></td>
-            <td>Manage builds</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Class</a></td>
-            <td>Manage checkpoints</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Namespace</a></td>
-            <td>Create a new image from a container’s changes</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Constructor</a></td>
-            <td>Manage Docker configs</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Fixture</a></td>
-            <td>Manage containers</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Type hint</a></td>
-            <td>Manage contexts</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Type cast</a></td>
-            <td>Copy files/folders between a container and the local filesystem</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Unit test</a></td>
-            <td>Create a new container</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Static</a></td>
-            <td>Inspect changes to files or directories on a container’s filesystem</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Class method</a></td>
-            <td>Get real time events from the server</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Facade</a></td>
-            <td>Run a command in a running container</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Method</a></td>
-            <td>Export a container’s filesystem as a tar archive</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Property</a></td>
-            <td>Show the history of an image</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Encapsulation</a></td>
-            <td>Manage images</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Inheritance</a></td>
-            <td>List images</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Polymorphism</a></td>
-            <td>Import the contents from a tarball to create a filesystem image</td>
-          </tr>
-        
-          
-          <tr>
-            <td>Abstraction</a></td>
-            <td>Display system-wide information</td>
-          </tr>
-        
-          
-      </table>
                 </div>
                 
             </div>
